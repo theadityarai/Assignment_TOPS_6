@@ -2,19 +2,29 @@
 
 package assignmentt2;
 
-import java.util.Scanner;
-
 public class Armstrong_Number_D {
 public static void main(String[] args) {
 	
-	Scanner sc= new Scanner(System.in);
-	System.out.println("Enter a number: ");
-	int num=sc.nextInt();
-	int original_num=num;
 	
+
+	int no1=372, num=no1,rem123,cube,sum=0;
+	while (no1 != 0) {
+
+	rem123=no1%10; //3
+
+	cube=(int) Math.pow(rem123, 3);//27
+	no1=no1/10; //15
+	sum=sum+cube;
+	}
+
+	if(num == sum) {
+	System.out.println("armstrong no");
+	}else {
+	System.out.println("not an armstrong no");
 	
 
 	
 }
 
+}
 }
