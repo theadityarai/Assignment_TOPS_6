@@ -4,8 +4,6 @@ package assignmentt2;
 
 public class Armstrong_Number_D {
 public static void main(String[] args) {
-	
-	
 
 	int no1=372, num=no1,rem123,cube,sum=0;
 	while (no1 != 0) {
