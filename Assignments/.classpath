@@ -90,5 +90,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="lib" path="C:/selenium-java-4.23.0/logback/logback.jar"/>
 	<classpathentry kind="lib" path="C:/selenium-java-4.23.0/slf4j/slf4j.jar"/>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

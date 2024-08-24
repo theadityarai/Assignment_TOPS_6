@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite">
+  <test name="FacebookLoginTest1">
+        <parameter name="email" value="nahipata@gmail.com"/>
+        <parameter name="password" value="Nahi@12345"/>
+        <classes>
+      <class name="assignmentt3.TestNG_Parameter_FB"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="FacebookLoginTest2">
+        <parameter name="email" value="firnahipata@gmail.com"/>
+        <parameter name="password" value="Nahi@678910"/>
+        <classes>
+            <class name="assignmentt3.TestNG_Parameter_FB"/>
+        </classes>
+    </test>
+  
+</suite> <!-- Suite -->
