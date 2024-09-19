@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="mvn.Assignment_8.DDF">
+      <class name="Assessment.DemoQa_Form">
         <methods>
-          <include name="test"/>
+          <include name="setup"/>
+          <include name="fillForm"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- mvn.Assignment_8.DDF -->
+      </class> <!-- Assessment.DemoQa_Form -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
