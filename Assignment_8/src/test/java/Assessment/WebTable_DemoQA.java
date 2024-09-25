@@ -25,7 +25,7 @@ public class WebTable_DemoQA {
         driver.manage().window().maximize();
     }
 
-    @Test
+    @Test(priority = 1)
     public void editGivenName() throws InterruptedException {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         WebElement elee = driver.findElement(By.xpath("//h1[normalize-space()='Web Tables']"));
@@ -45,10 +45,13 @@ public class WebTable_DemoQA {
         Thread.sleep(2000);        
     }
 
-    @Test
+    @Test(priority = 2)
     public void deleteGivenName() throws InterruptedException {
-        driver.findElement(By.id("delete-record-2")).click();
-        Thread.sleep(2000);
+    	WebElement deleteButton = driver.findElement(By.xpath("//span[@id='delete-record-2']"));
+    	((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", deleteButton);
+    	deleteButton.click();
+    	Thread.sleep(2000); 
+
 
     }
 

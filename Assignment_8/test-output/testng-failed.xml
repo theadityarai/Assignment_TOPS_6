@@ -6,8 +6,8 @@
       <class name="Assessment.WebTable_DemoQA">
         <methods>
           <include name="setup"/>
-          <include name="deleteGivenName"/>
           <include name="tearDown"/>
+          <include name="editGivenName"/>
         </methods>
       </class> <!-- Assessment.WebTable_DemoQA -->
     </classes>

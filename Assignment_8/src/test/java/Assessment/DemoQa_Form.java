@@ -35,12 +35,15 @@ public class DemoQa_Form {
         driver.findElement(By.id("firstName")).sendKeys("Aditya");
         driver.findElement(By.id("lastName")).sendKeys("Rai");
         driver.findElement(By.id("userEmail")).sendKeys("adi@gmail.com");
+        
+        js.executeScript("arguments[0].scrollIntoView();", driver.findElement(By.id("dateOfBirthInput")));
+        Thread.sleep(2000);
+        
         driver.findElement(By.xpath("//label[normalize-space()='Male']")).click();
         driver.findElement(By.id("userNumber")).sendKeys("7016192598");
         
         // Date of Birth
-        js.executeScript("arguments[0].scrollIntoView();", driver.findElement(By.id("dateOfBirthInput")));
-        Thread.sleep(2000);
+        
         driver.findElement(By.id("dateOfBirthInput")).click();
         
         // Year Selection
@@ -70,6 +73,10 @@ public class DemoQa_Form {
         
         // State and City selection
         driver.findElement(By.xpath("//div[@id='state']//div[contains(@class,'css-tlfecz-indicatorContainer')]")).click();
+
+        js.executeScript("arguments[0].scrollIntoView();", driver.findElement(By.id("stateCity-label")));
+        Thread.sleep(2000);
+        
         driver.findElement(By.xpath("//div[text()='Haryana']")).click();
         driver.findElement(By.xpath("//*[@id=\"city\"]/div/div[2]/div")).click();
         driver.findElement(By.xpath("//div[text()='Karnal']")).click();
@@ -87,7 +94,7 @@ public class DemoQa_Form {
 
     private void takeScreenshot(String screenshotName) {
         File sourcefile = ss.getScreenshotAs(OutputType.FILE);
-        File targetFile = new File("C:\\Users\\ashir\\eclipse-workspace\\Self_Taught_Selenium\\Screenshots\\" + screenshotName + ".png");
+        File targetFile = new File("C:\\Users\\ashir\\git\\repository\\Assignment_8\\ScreenShots" + screenshotName + ".png");
         sourcefile.renameTo(targetFile);
     }
 
